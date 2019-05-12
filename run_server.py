@@ -23,6 +23,7 @@ def main():
     humidity = Gauge('humidifier_humidity', 'humidity')
     power = Gauge('humidifier_power', 'power state')
     fan_speed = Gauge('humidifier_fan_speed', 'fan speed')
+    water_level = Gauge('humidifier_water_level', 'water level %')
 
     # start the server
     prometheus_client.start_http_server(int(args.port))
@@ -35,6 +36,7 @@ def main():
         except:
             log.error("Can't get information from device")
             continue
+        water_level.set(status.depth)
         temperature.set(status.temperature)
         humidity.set(status.humidity)
         if status.is_on:
