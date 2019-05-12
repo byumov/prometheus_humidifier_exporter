@@ -19,10 +19,10 @@ def main():
 
     humidifier = airhumidifier.AirHumidifierCA1(args.ip, args.token)
 
-    temperature = Gauge('temp', 'temp, C')
-    humidity = Gauge('humidity', 'humidity')
-    power = Gauge('power', 'power state')
-    fan_speed = Gauge('fan_speed', 'fan speed')
+    temperature = Gauge('humidifier_temp', 'temp, C')
+    humidity = Gauge('humidifier_humidity', 'humidity')
+    power = Gauge('humidifier_power', 'power state')
+    fan_speed = Gauge('humidifier_fan_speed', 'fan speed')
 
     # start the server
     prometheus_client.start_http_server(int(args.port))
