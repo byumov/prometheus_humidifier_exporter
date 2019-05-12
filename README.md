@@ -8,6 +8,6 @@ docker run -d --name prometheus_humidifier -p 8000:8000 -e "TOKEN=xxxxxxxx" -e "
 
 ## Docker Hub
 
-![Docker Pulls](https://img.shields.io/docker/pulls/byumov/prometheus_humidifier.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/byumov/prometheus_humidifier.svg) ![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/byumov/prometheus_humidifier.svg) ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/byumov/prometheus_humidifier.svg)
 
 [https://hub.docker.com/r/byumov/prometheus_humidifier](https://hub.docker.com/r/byumov/prometheus_humidifier)
