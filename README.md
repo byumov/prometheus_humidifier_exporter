@@ -1,5 +1,7 @@
 # Prometheus exporter for Xiaomi Smartmi Air Humidifier 2
 
+![Docker Pulls](img/grafana.png)
+
 ## Run with Docker
 
 ```bash
