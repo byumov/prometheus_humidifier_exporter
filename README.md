@@ -13,7 +13,7 @@ Or just install patched app: [http://www.kapiba.ru/2017/11/mi-home.html](http://
 ## Run with Docker
 
 ```bash
-docker run -d --name prometheus_humidifier -p 8000:8000 -e "TOKEN=xxxxxxxx" -e "IP=xx.xx.xx.xx" byumov/prometheus_humidifier
+docker run -d --name prometheus_humidifier -p 8000:8000 -e "TOKEN=xxxxxxxx" -e "IP=xx.xx.xx.xx" byumov/prometheus_humidifier:1.0.0
 ```
 
 ## Docker Hub
