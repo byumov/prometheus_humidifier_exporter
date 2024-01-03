@@ -1,5 +1,7 @@
 # Prometheus exporter for Xiaomi Smartmi Air Humidifier 2
 
+Tested only with version zhimi.humidifier.ca1 / AirHumidifierCA1
+
 ![Docker Pulls](img/grafana.png)
 
 ## Get device token

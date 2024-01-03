@@ -1,0 +1,27 @@
+[project]
+name = "prometheus_humidifier_exporter"
+version = "1.0.0"
+authors = [
+    { name="Ivan Byumov", email="ivan@buymov.ru" },
+]
+description = "Prometheus exporter for Xiaomi Smartmi Air Humidifier 2"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "python-miio==0.4.7",
+    "prometheus_client==0.19.0",
+    "build==1.0.3"
+]
+
+[project.scripts]
+prometheus_humidifier_exporter = "prometheus_humidifier_exporter.run_server:main"
+
+[project.urls]
+Homepage = "https://github.com/byumov/prometheus_humidifier_exporter"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
